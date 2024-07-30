@@ -1,7 +1,7 @@
 
 const page = () => {
     return (
-        <div className="min-h-screen flex justify-center p-32">
+        <div className="min-h-screen flex justify-center pt-24">
             Testing page
         </div>
     );
