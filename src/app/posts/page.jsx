@@ -1,6 +1,8 @@
 "use client"
 import getPosts from '@/Components/getPosts';
+import Link from 'next/link';
 import React from 'react';
+import PostCard from './postCard';
 
 const page = async () => {
 
@@ -15,11 +17,15 @@ const page = async () => {
             <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6'>
                 {
                     posts?.map(post =>
-                        <div
+                        <Link
                             key={post.id}
-                            className='w-[350px] h-[150px] flex items-center justify-center  bg-orange-300 px-4 py-2 rounded-md'>
-                            <h1>{post.title}</h1>
-                        </div>
+                            href={`/posts/${post.id}`}
+                        >
+                            <PostCard
+                                post={post}>
+                            </PostCard>
+                            
+                        </Link>
                     )
                 }
             </div>
