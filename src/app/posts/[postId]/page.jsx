@@ -1,5 +1,5 @@
 
-const fetchPostData = async (id) => {
+const fetchSinglePostData = async (id) => {
     const res = await fetch (`https://jsonplaceholder.typicode.com/posts/${id}`)
     const data = await res.json()
     return data
@@ -7,7 +7,7 @@ const fetchPostData = async (id) => {
 
 const page = async ({params}) => {
     
-    const postData = await fetchPostData(params?.postId)
+    const postData = await fetchSinglePostData(params?.postId)
     console.log('params are',params, postData)
 
  

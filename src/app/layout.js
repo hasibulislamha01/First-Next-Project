@@ -1,4 +1,5 @@
 import { Inter } from "next/font/google";
+import { openSans } from "./ui/fonts";
 import "./globals.css";
 import NavBar from "@/Components/SharedComponents/NavBar";
 import Footer from "@/Components/SharedComponents/Footer";
@@ -14,7 +15,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
 
-      <body className={inter.className}>
+      <body className={openSans.className}>
         <NavBar />
         {children}
         <Footer></Footer>
