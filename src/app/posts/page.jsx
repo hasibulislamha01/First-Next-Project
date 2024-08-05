@@ -4,6 +4,9 @@ import Link from 'next/link';
 import React from 'react';
 import PostCard from './postCard';
 
+
+
+
 const page = async () => {
 
     const posts = await getPosts()
