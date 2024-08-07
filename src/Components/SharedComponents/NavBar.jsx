@@ -52,7 +52,7 @@ const NavBar = () => {
                         )
                     }
                     <Link href={'/login'}>
-                        <button className='btn px-4 py-1 bg-red-400 rounded-md'>Login</button>
+                        <button className='px-4 py-1 bg-red-400 rounded-md'>Login</button>
                     </Link>
                 </ul>
             </div>
