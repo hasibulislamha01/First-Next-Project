@@ -45,7 +45,7 @@ const NavBar = () => {
                             <Link
                                 key={link.path}
                                 href={link.path}
-                                className={pathName === link.path && `text-blue-500`}
+                                className={pathName === link.path && `text-sky-400`}
                             >
                                 {link.title}
                             </Link>
